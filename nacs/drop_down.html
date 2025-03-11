@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        *{
+           box-sizing: border-box;
+           margin: 0;
+           padding: 0;
+       }
+       ul{
+            list-style: none;
+       }
+       :root{
+            --fonti: 1.6em;
+       }
+       
+       .drop-container89{
+            --a_cont: #00264d ;
+            background: var(--a_cont);
+            height: 100dvh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+       }
+       .drop-container89 i{
+            font-size: 2em;
+            float: right;
+            margin: .5em 1em;
+            margin-left: auto;
+       }
+       .drop-container89 .flow566{
+            --we12: calc(20vw + 1em);
+            display: grid;
+            grid-template-columns: var(--we12) 2fr;
+            border: 1px solid white;
+            height: 100%;
+       }
+       .flow566 .side{
+            border-right: 2px solid white;
+       }
+       .side ul li .l{
+        font-size: var(--fonti);
+       }
+       .side ul li{
+            margin-top: calc(var(--fonti) - .5em);
+            margin-left: calc(var(--fonti) - .5em);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+       }
+      
+       /* .side ul li:hover{
+            background: ;
+       } */
+       </style>
+</head>
+<body>
+    <!-- we will also make a program to detect network speed-->
+    <div class="drop-container89">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+        <div class="flow566">   
+            <div class="side s">
+                <ul>
+                    <li><div class="l">Levels</div></li>
+                    <li>
+                        <div class="e"><i class="fa-solid fa-circle-user fa-2xs"></i></div>
+                        <div class="l">Class Reps</div>
+                    </li>
+                    <li>
+                        <div class="e"><i class="fa-solid fa-object-subtract"></i></div>
+                        <div class="l">Syllabus</div></li>
+                    <li>
+                        <div class="e"><i class="fa-solid fa-right-to-bracket fa-2xs"></i></div>
+                        <div class="l">Login</div></li>
+                    <li>
+                        <div class="e"><i class="fa-solid fa-location-dot fa-2xs"></i></div>
+                        <div class="l">Location</div>
+                    </li>
+                    <li><div class="l">About</div></li>
+                    <li><div class="l">Time</div></li>
+                    <li><div class="l">Community</div></li>
+                    <li><div class="l">People</div></li>
+                    <li><div class="l">Email</div></li>
+                </ul>
+            </div>
+            <div class="di s"></div>
+        </div>
+    </div>
+</body>
+</html>

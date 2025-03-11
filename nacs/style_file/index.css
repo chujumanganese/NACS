@@ -1,0 +1,586 @@
+:root{
+    --gapping: 4em;
+    --button-color: #333333;
+    --bordering: 1px solid black;
+    --image_height: 500px;
+    --image_width: 100%;
+    --trueBackground:  #737373;
+    --universal-height: 100dvh;
+}
+h1{
+    line-height: 1.4;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+body, html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+ul, li{
+    list-style: none;
+}
+.container{
+    background-color: var(--trueBackground);
+    height: var(--universal-height);
+    background-image: url("../nacs_image/desktop_img.jpg");
+    width: 100dvw; 
+    max-width: 100%;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    place-content: center;
+    flex-wrap: wrap;
+}
+.texting{
+    max-width: 90%;
+    color: white;
+    text-align: center;
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.texting .up{
+    font-size: calc(3vw + .5rem); 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.texting .rom{
+    font-size:calc(1vw + .5rem);;
+    opacity: .85;
+    margin-top: .5em;
+}
+.upper{
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: .5em;
+    color: black;
+}
+.do9{
+    min-width: 40%;
+    margin-left: auto;
+}
+.do9 ul{
+    display: flex;
+    height: 100%;
+    font-weight: 500;
+    cursor:pointer;
+    align-items: center;
+    font-size: calc(1.2vh + .5rem);
+    padding-right: 1em;
+}
+.do9 ul li{
+    margin-left: 2em;
+}
+.do9 .hamburgerMenu{
+    font-size: 3rem;
+    display: none;
+}
+.do9 ul .mi16 button{
+    width: 5em;
+    background: #333333;
+    padding: .5em;
+    color: white;
+    border-radius: 5px;
+}
+.unique679002{
+    display: flex;
+    margin-top: 1em;
+}
+.unique679002 button{
+    padding: .5em;
+    width: 6em;
+    height: 3em;
+    border: .5px solid white;
+    border-radius: 5px;
+}
+.unique679002 .qw{
+    margin-left: 1em;
+}
+.unique679002 .qw button{
+    background: #666666;
+    color: white;
+}
+
+
+.go9{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-left: 1em;
+}
+.go9 img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.go9 span{
+    margin-left: .5em;
+    font-weight: bold;
+}
+
+/* Note that this is the end of the first section. /
+*/
+.section{
+    min-height: 100dvh;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    place-content: center;
+}
+.section .abouting-3 {
+    justify-self: center;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+.section .abouting-3 h1{
+    color:  #333333;
+    font-size: calc(1.2vw + 1rem);
+}
+.section .abouting-3 p{
+    margin-top: 1em;
+    line-height: 1.6;
+    text-align: left;
+    font-size: 1.2em;
+    opacity: .8;
+}
+.section .abouting-3 button{
+    background: var(--button-color);
+    width: 10em;
+    color: white;
+    padding: .5em;
+    margin-top: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.section .abouting-4{
+    margin-top: 1em;
+    width: 80%;
+    background-image: url("../nacs_image/useful.jpeg");
+    max-width: 100%; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #c9c6c6;
+    height: 400px;
+    justify-self: center;
+  
+}
+/* End of section 2 */
+.mobile-section{
+    display: none;
+}
+.card-1 .dol00{
+    padding: 1em;
+    word-spacing: 2px;
+}
+
+.container-lowers1, .container-lowers1 .event-of ul, .controlled-22{
+    display: grid;
+}
+.container-lowers1{
+    width: 100%;
+    min-height: 100vh;
+    padding: 3em;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gapping);
+}
+.container-lowers1 img{
+    height: var(--image_height);
+    width: var(--image_width);
+}
+.container-lowers1 .event-of{
+    width: 100%;
+}
+.container-lowers1 .event-of ul{
+    list-style: none;
+    grid-template-rows: repeat(4, 1fr);
+    height: 100%;
+}
+.event-of ul li{
+    border-bottom: 1px solid lightgrey;
+    padding: .5em;
+    margin-top: .5em;
+    padding-top: .2em;
+    font-weight: 100;
+}
+.event-of ul li h3{
+    font-weight: lighter;
+    margin-bottom: .5em;
+    font-family: var(--calibri);
+    letter-spacing: 2px;
+}
+.controlled-22{
+    grid-template-columns: 4fr 1fr;
+}
+li .controlled-22 p{
+    text-align: left;
+    max-width: 54ch;
+}
+.controlled-22 .show-t67em{
+    height: 100%;
+    width: 100%;
+    border: var(--bordering);
+}
+.event-of ul .q-uio7{
+    border-bottom: 0;
+}
+.kilo-foot {
+    width: 100%;
+    height: auto;
+    background: #21313c;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6.25em, 1fr));
+    color: white;
+    padding: calc(6vh + 1em);
+    position: relative;
+}
+.kilo-foot .foot-grid-one{
+    display: flex;
+    height: 4em;
+    grid-column: span 2;
+    align-items: center;
+    margin-right: .5em;
+}
+.foot-grid-one img{
+    width: 2.8125em;
+    height: 2.8125em;
+    border-radius: 50%;
+    opacity: 0.9;
+    margin-right: .7em;
+}
+.fufupapa p{
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: .5em;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+.fufupapa li{
+    margin-top: 1.5em;
+}
+.smmaledt {
+    display: flex;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+}
+.smmaledt .q{
+    margin-right: .5em;
+}/* The card section of the code */
+.teacher-section{
+    min-height: 100dvh;
+}
+.teacher-section .gather-teacher{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: center;
+    gap: 2em;
+}
+.gather-teacher .g4f4{
+    max-width: 80%;
+    margin-top: 1.5em;
+    justify-self: center;
+    border-radius: 16px;
+    box-shadow: 5px 5px 10px -1px rgba(10, 93, 169, .16),
+                -10px -10px 10px -1px rgba(255, 255, 255, .7);
+}
+.g4f4 .img2{
+    height: 300px;
+    border: 0;
+}
+.g4f4 .img2 img{
+    width: 100%;
+    border-radius: 16px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    object-fit: cover;
+}
+.g4f4 p{
+    border: 2px solid lightgray;
+    padding: .5em;
+    margin-top: 1em;
+}
+.g4f4 .lo{
+   padding: .5em;
+   position: relative;
+}
+.g4f4 small{
+    line-height: 1.62;
+    text-align: justify;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, .6);
+}
+/* The suggestion section of the page */
+
+.lecturers{
+    padding-top: 2em;
+    position: relative;
+    border: 1px solid black;
+}
+.container45{
+    height: 26.25em;
+    width: 37.5em;
+    padding: 1.5em;
+    margin: 1em 0;
+    box-shadow: 5px 5px 10px -1px rgba(10, 93, 169, .16),
+    -10px -10px 10px -1px rgba(255, 255, 255, .7);
+}
+.dop67j{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dop67j h1{
+    color: black;
+    letter-spacing: 3px;
+}
+.top77 {
+    text-align: start;
+    grid-template-rows: 2px auto;
+    display: grid;
+    grid-template-areas: 
+        "a a a a f f f f f f f f"
+        "c c c c d d d d d d d d";
+    gap: 2em;
+}
+.top77 input{
+    height: 3em;
+    width: 80%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid black;
+    padding-left: .5em;
+    background: whitesmoke; 
+}
+.labela{
+    grid-area: a;
+}
+.labelb{
+    grid-area: f;
+}
+.a32{
+    grid-area: c;
+}
+.a78{
+    grid-area: d;
+}
+.a78 input{
+    width: 100%;
+}
+.text8034 textarea{
+    width: 100%;
+    height: 11rem;
+    resize: none;
+    padding: 1em;
+    font-size: large;
+    margin-top: 1em;
+    background: whitesmoke;
+    border: none;
+    outline: none;
+}
+.text8034 textarea:hover, .text8034 textarea:active, .a78 input:hover, .a32 input:hover{
+    outline: 1px solid lightgray;
+    border: 0;
+}
+.k5647{
+    padding: .5em;
+    width: 100%;
+    height: 2.5em;
+    margin-top: 2em;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-weight: bold;
+    border: none;
+    background: black;
+    color: white;
+}
+.k5647:hover{
+    transform: scaleY(1.2);
+    font-stretch: none;
+}
+.text8034 {
+    margin-top: 1em;
+}
+.a12 i{
+    margin-right: .5em;
+}
+/* The alumni part of the code in the css section it has no queries */
+.alumni-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 3em;
+}
+.alumni-container-y .lopias{
+    padding: 1em;
+    max-width: 500px;
+    margin: 1em;
+}
+.alumni-secondContainer{
+    height: auto;
+    max-width: fit-content;
+    margin: 1em;
+    justify-self: center;
+    box-shadow: 5px 5px 10px -1px rgba(10, 93, 169, .16),
+    -10px -10px 10px -1px rgba(255, 255, 255, .7);
+}
+.alumni-secondContainer .head-alumni{
+    padding: .5em;
+    display: flex;
+}
+.head-alumni article{
+    font-size: .8rem;
+    width: 30ch;
+    margin-left: 1em;
+}
+.head-alumni article p{
+    letter-spacing: 1.5px;
+}
+.tail-alumni{
+    padding: 1em;
+    max-width: 35ch;
+    text-align: justify;
+    color: rgba(0, 0, 0, .85);
+}
+.head-alumni img{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.combine-alumni {
+    max-width: 30ch;
+    border: 1px solid black;
+    padding: .5em;
+}
+/* The end of te alumni section in the page it has no code */
+
+/* The footer part of the page */
+footer{
+    font-family:'poppins', 'sans-serif';
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    background: black;
+    color: white;
+}
+footer h1{
+    font-weight: lighter;
+}
+footer .container-h{
+    /* border: 1px solid black; */
+    max-width: 50ch;
+    position: relative;
+    padding: 1rem;
+}
+.container-f ul li{
+    padding: .5em;
+    font-size: 1.2rem;
+    color: rgba(255,255,225,.65);
+}
+.container-h p{
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color:  rgba(255,255,225,.65);
+}
+.container-h .icon-box{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/* we have universally agreed to pad our containers */
+.section-page-faq, .lecturers{
+    padding: 1em ;
+}
+/* The end of padding the containers */
+
+/* The faq code section */
+.section-page-faq{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.question>h4{
+    font-weight: lighter;
+    color: rgba(0, 0, 0, .8);
+}
+.faq-container{
+    display: flex;
+    max-width: 37.5rem;
+    padding: 1em;
+    margin: 2em auto;
+    background: whitesmoke;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    row-gap: .5em;
+}
+.section-page-faq h1 {
+    margin: 1rem auto;
+    font-size: 1.5rem;
+}
+.faq-side .question{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: lighter;
+}
+.faq-side .question span{
+    font-size: 2rem;
+}
+.faq-side .answer{
+    padding-bottom: .5em;
+    border-bottom: .1px solid lightgrey;
+    transition: max-height .5s ease;
+}
+.faq-side .answer p{
+    line-height: 1.6;
+    padding-top: .2rem;
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+.faq-side .answer{
+    max-height: 0;
+    overflow: hidden;
+}
+.faq-side.a .answer{
+    max-height: 300px;
+    animation: fade 1.4s ease-in-out;
+}
+.faq-side.a span{
+    transform: rotate(45deg);
+}
+.faq-side span{
+    transition: transform .2s ease-in;
+}
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

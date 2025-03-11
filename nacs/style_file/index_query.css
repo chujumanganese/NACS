@@ -1,0 +1,184 @@
+@media (max-width: 968px) {
+    .container{
+        background-position: center;
+    }
+}
+@media (max-width: 768px) {
+    .alumni-container-y .lopias{
+       font-size: small;
+    }
+    .container{
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .texting .rom{
+        font-size: calc(1.5vw + .5rem);
+        text-align: left;
+        align-self: flex-start;
+    }
+    .texting .up{
+        font-size:  calc(3vh + 1rem);
+        text-align: left;
+        align-self: flex-start;
+    }
+    .do9 li{
+        display: none;
+    }
+    .do9 .hamburgerMenu{
+        display: block;
+        margin-left: auto;
+    }
+    .mobile-section{
+        min-height: calc(110vh - 50px);
+        width: 100%;
+        background: #333333;
+        color: white;
+        display: none;
+        position: absolute;
+        top: 0;
+    }
+    .mobile-section ul{
+        list-style: none;
+        font-size: 1.5em;
+    }
+    .mobile-section li{
+        letter-spacing: 3px;
+        padding: .5em;
+    }
+    .mobile-section .search_er{
+        margin-bottom: 1.3em;
+        border: none;
+        height: 3em;
+    }
+    .search_er input{
+        width: 95%;
+        height: 100%;
+        background: transparent;
+        color: white;
+        border-bottom: 2px solid cornflowerblue;
+        padding-left: .5em;
+        font-size: 1.2em;
+        margin-left: .5em;
+        margin-top: .5em;
+    }
+    .search_er input::placeholder{
+        color: white;
+    }
+    .mobile-section li:hover{
+        background: cornflowerblue;
+    }
+    .mobile-section .mobile-headed{
+        background: linear-gradient(to left, cornflowerblue, aliceblue);
+        margin: 0;
+        height: 5em;
+        display: flex;
+        align-items: center;
+        padding: .5em;
+    }
+    .mobile-headed img{
+        border-radius: 50%;
+    }
+    .mobile-headed p{
+        margin-left: .5em;
+        color: black;
+    }
+    .mobile-headed h1{
+        font-size: 2em;
+        margin-right: .5em;
+        font-family: sans-serif;
+        cursor: pointer;
+        margin-left: auto;
+    }
+    .search_er input:hover , .search_er input:active{
+        border: 0;
+        outline: 0;
+        border-bottom: 2px solid cornflowerblue;
+        margin: 0 1em 0 .5em;
+    }
+   
+    /* The suggestion box below */
+    
+    .container45{
+        height: auto;
+        width: auto;
+    }
+    /* The end of the suggestion box. */
+    .top77 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.25em 3em 1.25em 3em;
+        grid-template-areas: 
+        "a a a a a a a a a a a a"
+        "b b b b b b b b b b b b"
+        "c c c c c c c c c c c c"
+        "d d d d d d d d d d d d";
+        gap: 5px;
+    }
+    .labela{
+        grid-area: a;
+    }
+    .labelb{
+        grid-area: c;
+    }
+    .a32{
+        grid-area: b;
+    }
+    .a78{
+        grid-area: d;
+    }
+    .a32 input{
+        width: 100%;
+    }
+    .container-lowers1{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .g4f4 .lo{
+        max-width: 60ch;
+    }
+   
+    .kilo-foot{
+        height: auto;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1em;
+        padding: 1.5em;
+    }
+    .kilo-foot .foot-grid-one{
+        height: 4em;
+        align-items: center;
+    }
+   
+    .kilo-foot .foot-grid-one h1{
+        font-size: 1.5em;
+    }
+    .kilo-foot .fufupapa{
+        margin-bottom: 1em;
+    }
+    .fufupapa ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+    }
+    .fufupapa ul li{
+        margin: .5em;
+    }
+}
+@media (max-width: 468px) {
+   .texting .rom{
+        font-size: calc(2vw + .5rem); /* 1.618 font size */
+    }
+    .texting .up{
+        font-size:  calc(1vh + 1rem);
+        max-width: 21ch;
+        margin: .5em 0;
+    }
+    .unique679002{
+        align-self: flex-start;
+    }
+    .kilo-foot .foot-grid-one{
+        grid-column: span 1;
+    }
+    .alumni-container-y .lopias{
+        text-align: center;
+    }
+}

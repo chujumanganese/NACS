@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* Initial state for the text */
+        .fade-text {
+            opacity: 0;            /* Start with the text invisible */
+            transition: opacity 2s; /* Set fade duration */
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        /* When the fade effect is triggered */
+        .fade-in {
+            opacity: 1; /* Make the text fully visible */
+        }
+
+    </style>
+</head>
+<body>
+    <div id="fadeText" class="fade-text">
+       
+    </div>
+    <button onclick="foo()">click m</button>
+
+    <script>
+      // Get the element to fade in
+        const fadeText = document.getElementById("fadeText");
+
+        f = ["This ", "is ", "cyber ", "security ", "in ", "futo."]
+        var d = 0 ;
+        // Wait for the page to load and then add the fade-in class to trigger the effect
+            function foo(){
+                setTimeout(() => {
+                    fadeText.classList.add("fade-in");
+                    fadeText.innerHTML += f[0];
+                    foo(); 
+                    d++; 
+                }, 100); 
+
+        }
+
+    </script>
+</body>
+</html>
